@@ -8,5 +8,5 @@
  */
 function sanitize_email($email)
 {
-    return preg_replace('/[^\p{L}\d!#$%&\'*+-\/=?^_`{|}~@.\[\]]+/', '', $email);
+    return preg_replace('/[^\p{L}\d!#$%&\'*+-\/=?^_`{|}~@.\[\]]+/u', '', $email);
 }
