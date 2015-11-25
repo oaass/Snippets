@@ -32,6 +32,6 @@ function analyzeData($data, $kill = true)
 function tracer($info = '', $reset = false)
 {
     static $counter = 0;
-    $counter = ($reset) ? 0 : $counter+1;
+    $counter = ($reset) ? 1 : $counter+1;
     echo "<strong>Tracer:</strong> Check point #{$counter} ({$info})<br>";
 }
